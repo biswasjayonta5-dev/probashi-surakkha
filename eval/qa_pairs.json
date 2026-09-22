@@ -1,0 +1,326 @@
+[
+  {
+    "id": "Q01",
+    "topic": "licence",
+    "q": "লাইসেন্স ছাড়া কেউ বিদেশে পাঠাতে পারবে কি?",
+    "expected_sections": [
+      "9",
+      "3"
+    ]
+  },
+  {
+    "id": "Q02",
+    "topic": "licence",
+    "q": "Do I need a licence to work as a recruitment agent?",
+    "expected_sections": [
+      "9"
+    ]
+  },
+  {
+    "id": "Q03",
+    "topic": "licence",
+    "q": "How long is a recruitment licence valid for?",
+    "expected_sections": [
+      "11"
+    ]
+  },
+  {
+    "id": "Q04",
+    "topic": "licence",
+    "q": "এজেন্সির লাইসেন্স কবে বাতিল হতে পারে?",
+    "expected_sections": [
+      "12"
+    ]
+  },
+  {
+    "id": "Q05",
+    "topic": "licence",
+    "q": "What are the duties of a recruitment agent?",
+    "expected_sections": [
+      "15"
+    ]
+  },
+  {
+    "id": "Q06",
+    "topic": "licence",
+    "q": "Can a recruitment agent transfer the licence to someone else?",
+    "expected_sections": [
+      "17"
+    ]
+  },
+  {
+    "id": "Q07",
+    "topic": "licence",
+    "q": "Who is eligible to get a recruitment licence?",
+    "expected_sections": [
+      "10"
+    ]
+  },
+  {
+    "id": "Q08",
+    "topic": "licence",
+    "q": "এজেন্সির শাখা অফিস খোলার নিয়ম কী?",
+    "expected_sections": [
+      "14"
+    ]
+  },
+  {
+    "id": "Q09",
+    "topic": "licence",
+    "q": "What happens to the surety money if a licence is cancelled?",
+    "expected_sections": [
+      "18"
+    ]
+  },
+  {
+    "id": "Q10",
+    "topic": "contract",
+    "q": "চুক্তিতে কী কী থাকতে হবে?",
+    "expected_sections": [
+      "22"
+    ]
+  },
+  {
+    "id": "Q11",
+    "topic": "contract",
+    "q": "What must an employment contract state about wages and accommodation?",
+    "expected_sections": [
+      "22"
+    ]
+  },
+  {
+    "id": "Q12",
+    "topic": "contract",
+    "q": "Who is responsible if the employer breaks the contract?",
+    "expected_sections": [
+      "22"
+    ]
+  },
+  {
+    "id": "Q13",
+    "topic": "contract",
+    "q": "Do I have the right to see the contract before I leave?",
+    "expected_sections": [
+      "26"
+    ]
+  },
+  {
+    "id": "Q14",
+    "topic": "fee",
+    "q": "সরকার কি অভিবাসন খরচের সর্বোচ্চ সীমা ঠিক করে?",
+    "expected_sections": [
+      "21"
+    ]
+  },
+  {
+    "id": "Q15",
+    "topic": "fee",
+    "q": "Can a recruitment agent charge more than the government fixed cost?",
+    "expected_sections": [
+      "9",
+      "21"
+    ]
+  },
+  {
+    "id": "Q16",
+    "topic": "visa",
+    "q": "ট্যুরিস্ট ভিসায় বিদেশে কাজ করা যাবে কি?",
+    "expected_sections": [
+      "5"
+    ]
+  },
+  {
+    "id": "Q17",
+    "topic": "visa",
+    "q": "What documents are needed for migration clearance?",
+    "expected_sections": [
+      "4",
+      "20"
+    ]
+  },
+  {
+    "id": "Q18",
+    "topic": "registration",
+    "q": "Do I have to register with the Bureau before going abroad?",
+    "expected_sections": [
+      "19"
+    ]
+  },
+  {
+    "id": "Q19",
+    "topic": "registration",
+    "q": "মাইগ্রেশন ক্লিয়ারেন্স কার্ড কী?",
+    "expected_sections": [
+      "20"
+    ]
+  },
+  {
+    "id": "Q20",
+    "topic": "rights",
+    "q": "What legal help can a migrant worker get?",
+    "expected_sections": [
+      "27"
+    ]
+  },
+  {
+    "id": "Q21",
+    "topic": "rights",
+    "q": "প্রতারণার শিকার হলে কি ক্ষতিপূরণের মামলা করা যায়?",
+    "expected_sections": [
+      "28"
+    ]
+  },
+  {
+    "id": "Q22",
+    "topic": "rights",
+    "q": "What if I am stranded abroad and want to come home?",
+    "expected_sections": [
+      "29"
+    ]
+  },
+  {
+    "id": "Q23",
+    "topic": "rights",
+    "q": "Who pays the cost of repatriation if the agency was negligent?",
+    "expected_sections": [
+      "29"
+    ]
+  },
+  {
+    "id": "Q24",
+    "topic": "rights",
+    "q": "প্রবাসী workers এর জন্য কি কোনো কল্যাণ তহবিল বা ঋণ আছে?",
+    "expected_sections": [
+      "30"
+    ]
+  },
+  {
+    "id": "Q25",
+    "topic": "rights",
+    "q": "What does the Labour Welfare Wing do for workers abroad?",
+    "expected_sections": [
+      "23",
+      "24"
+    ]
+  },
+  {
+    "id": "Q26",
+    "topic": "complaint",
+    "q": "প্রতারণার অভিযোগ কোথায় করব?",
+    "expected_sections": [
+      "41"
+    ]
+  },
+  {
+    "id": "Q27",
+    "topic": "complaint",
+    "q": "How long does the government take to investigate my complaint?",
+    "expected_sections": [
+      "41"
+    ]
+  },
+  {
+    "id": "Q28",
+    "topic": "complaint",
+    "q": "Can my complaint be settled by arbitration (salish)?",
+    "expected_sections": [
+      "41"
+    ]
+  },
+  {
+    "id": "Q29",
+    "topic": "complaint",
+    "q": "Can I get back money that was taken from me illegally?",
+    "expected_sections": [
+      "43"
+    ]
+  },
+  {
+    "id": "Q30",
+    "topic": "penalty",
+    "q": "অবৈধভাবে বিদেশে পাঠানোর শাস্তি কী?",
+    "expected_sections": [
+      "31"
+    ]
+  },
+  {
+    "id": "Q31",
+    "topic": "penalty",
+    "q": "What is the penalty for charging more than the fixed fee?",
+    "expected_sections": [
+      "31"
+    ]
+  },
+  {
+    "id": "Q32",
+    "topic": "penalty",
+    "q": "Is it an offence if an agent keeps my passport?",
+    "expected_sections": [
+      "31"
+    ]
+  },
+  {
+    "id": "Q33",
+    "topic": "penalty",
+    "q": "What is the punishment for visa trading or selling demand notes?",
+    "expected_sections": [
+      "33"
+    ]
+  },
+  {
+    "id": "Q34",
+    "topic": "penalty",
+    "q": "Penalty for sending a worker from a place other than the specified departure point?",
+    "expected_sections": [
+      "34"
+    ]
+  },
+  {
+    "id": "Q35",
+    "topic": "penalty",
+    "q": "What happens to a person who instigates or abets these offences?",
+    "expected_sections": [
+      "36"
+    ]
+  },
+  {
+    "id": "Q36",
+    "topic": "court",
+    "q": "Which court tries offences under this Act and how long should the trial take?",
+    "expected_sections": [
+      "38"
+    ]
+  },
+  {
+    "id": "Q37",
+    "topic": "court",
+    "q": "Which offences are cognizable and non-bailable?",
+    "expected_sections": [
+      "39"
+    ]
+  },
+  {
+    "id": "Q38",
+    "topic": "court",
+    "q": "Can mobile courts act under this Act?",
+    "expected_sections": [
+      "40"
+    ]
+  },
+  {
+    "id": "Q39",
+    "topic": "definitions",
+    "q": "What does the Act mean by fraud in migration?",
+    "expected_sections": [
+      "2"
+    ]
+  },
+  {
+    "id": "Q40",
+    "topic": "misc",
+    "q": "Is there a bilateral agreement with destination countries about workers' rights?",
+    "expected_sections": [
+      "25"
+    ]
+  }
+]

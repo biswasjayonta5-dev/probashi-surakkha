@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b6b4f" />
+<title>প্রবাসী সুরক্ষা — Migrant Worker Fraud Shield</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Trust bar: shown on every screen, never hidden. -->
+<header class="topbar" id="trustbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🛡️</span>
+    <div>
+      <h1>প্রবাসী সুরক্ষা</h1>
+      <p class="sub">Migrant Worker Fraud Shield <span class="draft">প্রোটোটাইপ</span></p>
+    </div>
+  </div>
+  <div class="trustline" id="trustline">তথ্য লোড হচ্ছে…</div>
+</header>
+
+<div class="banner banner-warn" id="demobanner" hidden></div>
+
+<main>
+  <!-- 1. Licence checker -->
+  <section class="card" id="tab-licence" role="tabpanel">
+    <h2>১. এজেন্সি যাচাই</h2>
+    <p class="lead">টাকা দেওয়ার আগে এজেন্সির আরএল (RL) নম্বর বা নাম দিয়ে দেখুন সরকারি তালিকায় আছে কি না।</p>
+    <label for="licence-query">আরএল নম্বর বা এজেন্সির নাম</label>
+    <div class="inputrow">
+      <input id="licence-query" type="text" inputmode="text" autocomplete="off"
+             placeholder="যেমন: RL-1001 বা Padma Overseas" />
+      <button class="mic" type="button" data-mic="licence-query" title="মুখে বলুন" aria-label="মুখে বলুন">🎤</button>
+    </div>
+    <button class="primary" id="licence-go">যাচাই করুন</button>
+    <div class="result" id="licence-result" hidden></div>
+  </section>
+
+  <!-- 2. Contract explainer + red flags -->
+  <section class="card" id="tab-contract" role="tabpanel" hidden>
+    <h2>২. চুক্তি বুঝুন</h2>
+    <p class="lead">চুক্তি বা নিয়োগপত্রের পরিষ্কার ছবি (বা PDF) দিন — সহজ বাংলায় কী লেখা আছে দেখুন।</p>
+
+    <div class="consent" id="consent">
+      <strong>আগে এইটুকু পড়ুন</strong>
+      <p id="consent-text">…</p>
+      <label class="check">
+        <input type="checkbox" id="consent-ok" /> আমি বুঝেছি, ছবি পাঠাতে রাজি আছি
+      </label>
+    </div>
+
+    <input id="contract-file" type="file" accept="image/*,application/pdf" capture="environment" hidden />
+    <button class="primary" id="contract-pick" disabled>ছবি বা PDF বাছুন</button>
+    <div class="fileinfo" id="contract-fileinfo" hidden></div>
+
+    <details class="extra">
+      <summary>এজেন্ট কী বলেছে? (ঐচ্ছিক, কিন্তু গুরুত্বপূর্ণ)</summary>
+      <div class="grid2">
+        <label>এজেন্সির নাম<input id="a-agency-name" type="text" /></label>
+        <label>আরএল নম্বর<input id="a-agency-rl" type="text" /></label>
+        <label>মুখে বলা বেতন (টাকা)<input id="a-verbal-wage" type="number" inputmode="numeric" /></label>
+        <label>চাওয়া ফি (টাকা)<input id="a-quoted-fee" type="number" inputmode="numeric" /></label>
+        <label>ভিসার ধরন<input id="a-visa" type="text" placeholder="যেমন: tourist / work" /></label>
+      </div>
+      <div class="checks">
+        <label class="check"><input type="checkbox" id="a-cash" /> নগদ টাকা চাওয়া হয়েছে</label>
+        <label class="check"><input type="checkbox" id="a-nowritten" /> এখনো লিখিত চুক্তি পাইনি</label>
+      </div>
+    </details>
+
+    <button class="primary" id="contract-go" disabled>বিশ্লেষণ করুন</button>
+    <div class="result" id="contract-result" hidden></div>
+  </section>
+
+  <!-- 3. Fee check -->
+  <section class="card" id="tab-fee" role="tabpanel" hidden>
+    <h2>৩. ফি যাচাই</h2>
+    <p class="lead">কত টাকা চাওয়া হচ্ছে লিখুন — সরকার-নির্ধারিত সীমার চেয়ে বেশি কি না দেখুন।</p>
+    <label for="fee-destination">কোন দেশে যাবেন?</label>
+    <div class="inputrow">
+      <input id="fee-destination" type="text" placeholder="সৌদি আরব / মালয়েশিয়া" />
+      <button class="mic" type="button" data-mic="fee-destination" aria-label="মুখে বলুন">🎤</button>
+    </div>
+    <label for="fee-amount">কত টাকা চাওয়া হচ্ছে?</label>
+    <div class="inputrow">
+      <input id="fee-amount" type="number" inputmode="numeric" placeholder="যেমন: 400000" />
+      <button class="mic" type="button" data-mic="fee-amount" aria-label="মুখে বলুন">🎤</button>
+    </div>
+    <button class="primary" id="fee-go">তুলনা করুন</button>
+    <div class="result" id="fee-result" hidden></div>
+  </section>
+
+  <!-- 4. Complaint / rights guide -->
+  <section class="card" id="tab-ask" role="tabpanel" hidden>
+    <h2>৪. অভিযোগ ও অধিকার</h2>
+    <p class="lead">প্রশ্ন লিখুন বা মুখে বলুন — উত্তর সাথে আইনের ধারা দেখানো হবে।</p>
+    <div class="inputrow">
+      <input id="ask-question" type="text" placeholder="যেমন: টাকা ফেরাতে কোথায় অভিযোগ করব?" />
+      <button class="mic" type="button" data-mic="ask-question" aria-label="মুখে বলুন">🎤</button>
+    </div>
+    <div class="quickask">
+      <button type="button" data-ask="প্রতারণার অভিযোগ কোথায় করব?">অভিযোগ কোথায়?</button>
+      <button type="button" data-ask="চুক্তিতে কী কী থাকতে হবে?">চুক্তিতে কী থাকবে?</button>
+      <button type="button" data-ask="ট্যুরিস্ট ভিসায় কাজ করা যাবে কি?">ট্যুরিস্ট ভিসা</button>
+      <button type="button" data-ask="প্রতারণার শাস্তি কী?">শাস্তি কী?</button>
+    </div>
+    <button class="primary" id="ask-go">উত্তর দেখুন</button>
+    <div class="result" id="ask-result" hidden></div>
+  </section>
+</main>
+
+<!-- Human fallback: on every screen, as required by the plan. -->
+<footer class="helpline" id="helpline">
+  <div>
+    <strong>মানুষের সাথে কথা বলতে চান?</strong>
+    <div id="helpline-line">…</div>
+  </div>
+  <div class="helpline-note" id="helpline-note"></div>
+</footer>
+
+<nav class="tabs" role="tablist">
+  <button role="tab" class="tab active" data-tab="licence">যাচাই</button>
+  <button role="tab" class="tab" data-tab="contract">চুক্তি</button>
+  <button role="tab" class="tab" data-tab="fee">ফি</button>
+  <button role="tab" class="tab" data-tab="ask">অভিযোগ</button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>

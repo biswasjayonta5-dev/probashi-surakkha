@@ -1,0 +1,834 @@
+{
+  "mode": "offline",
+  "metrics": {
+    "licence_exact_rl": 1.0,
+    "licence_invalid": 1.0,
+    "licence_typo_name": 0.9,
+    "licence_typo_name_candidates": 1.0,
+    "field_accuracy": 0.9324324324324325,
+    "flag_recall": 1.0,
+    "flag_false_alarm": 0.0,
+    "latency_p95": 0.0008022480001272925,
+    "qa_top3": 0.85,
+    "qa_uncited": 0.0
+  },
+  "missed_targets": [],
+  "licence": {
+    "metrics": {
+      "licence_exact_rl": 1.0,
+      "licence_invalid": 1.0,
+      "licence_typo_name": 0.9,
+      "licence_typo_name_candidates": 1.0
+    },
+    "failures": [
+      {
+        "query": "Arial Kha",
+        "group": "typo_name",
+        "status": "ambiguous",
+        "got": "RL-1010",
+        "expected": "RL-1039",
+        "note": "expected agency present in candidates, not top-1"
+      }
+    ],
+    "counts": {
+      "exact_rl": [
+        10,
+        10
+      ],
+      "invalid": [
+        10,
+        10
+      ],
+      "typo_name": [
+        9,
+        10
+      ]
+    },
+    "candidates": {
+      "exact_rl": [
+        10,
+        0
+      ],
+      "invalid": [
+        10,
+        0
+      ],
+      "typo_name": [
+        10,
+        0
+      ]
+    }
+  },
+  "contracts": {
+    "metrics": {
+      "field_accuracy": 0.9324324324324325,
+      "flag_recall": 1.0,
+      "flag_false_alarm": 0.0,
+      "latency_p95": 0.0008022480001272925
+    },
+    "fields": {
+      "monthly_wage": [
+        19,
+        19
+      ],
+      "duration": [
+        19,
+        19
+      ],
+      "accommodation": [
+        8,
+        9
+      ],
+      "return_ticket": [
+        8,
+        9
+      ],
+      "compensation": [
+        8,
+        9
+      ],
+      "visa": [
+        7,
+        9
+      ]
+    },
+    "fields_skipped_needs_llm": 5,
+    "per_contract": [
+      {
+        "file": "c01_clean_en_sa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1200,
+            "got": 1200.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "work visa",
+            "ok": true
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c02_clean_en_sa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1400,
+            "got": 1400.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "work visa",
+            "ok": true
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c03_clean_en_my.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1500,
+            "got": 1500.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "work visa",
+            "ok": true
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c04_clean_en_my.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1600,
+            "got": 1600.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "work visa",
+            "ok": true
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c05_clean_bn_sa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1300,
+            "got": 1300.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "ভিসা",
+            "ok": false
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c06_clean_bn_my.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1500,
+            "got": 1500.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "ভিসা",
+            "ok": false
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c07_clean_ar_sa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1200,
+            "got": null,
+            "ok": null,
+            "skipped": "needs_llm"
+          },
+          "duration": {
+            "expected": 24,
+            "got": null,
+            "ok": null,
+            "skipped": "needs_llm"
+          },
+          "accommodation": {
+            "expected": true,
+            "got": null,
+            "ok": null,
+            "skipped": "needs_llm"
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": null,
+            "ok": null,
+            "skipped": "needs_llm"
+          },
+          "compensation": {
+            "expected": true,
+            "got": null,
+            "ok": null,
+            "skipped": "needs_llm"
+          }
+        },
+        "planted": [],
+        "detected": [
+          "missing_key_terms"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "missing_key_terms"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c08_clean_en_qa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1500,
+            "got": 1500.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "visa": {
+            "expected": "work",
+            "got": "work visa",
+            "ok": true
+          }
+        },
+        "planted": [],
+        "detected": [],
+        "missed": [],
+        "extra_findings": [],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c09_missing_wage.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": null,
+            "got": null,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          },
+          "compensation": {
+            "expected": true,
+            "got": true,
+            "ok": true
+          }
+        },
+        "planted": [
+          "missing_key_terms",
+          "vague_clause"
+        ],
+        "detected": [
+          "missing_key_terms",
+          "no_recruiter_named",
+          "vague_clause"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c10_tourist_visa.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1100,
+            "got": 1100.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "visa": {
+            "expected": "tourist",
+            "got": "tourist visa",
+            "ok": true
+          }
+        },
+        "planted": [
+          "fee_above_cap",
+          "tourist_visa_for_work"
+        ],
+        "detected": [
+          "fee_above_cap",
+          "fee_far_above_cap",
+          "no_recruiter_named",
+          "tourist_visa_for_work"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "fee_far_above_cap",
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c11_fee_above_cap.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1300,
+            "got": 1300.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          }
+        },
+        "planted": [
+          "cash_payment_no_receipt",
+          "fee_above_cap"
+        ],
+        "detected": [
+          "cash_payment_no_receipt",
+          "fee_above_cap",
+          "fee_far_above_cap",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "fee_far_above_cap",
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c12_vague_clause.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1200,
+            "got": 1200.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          }
+        },
+        "planted": [
+          "vague_clause"
+        ],
+        "detected": [
+          "no_recruiter_named",
+          "vague_clause"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c13_wage_mismatch.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1200,
+            "got": 1200.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          }
+        },
+        "planted": [
+          "wage_mismatch_verbal_vs_contract"
+        ],
+        "detected": [
+          "no_recruiter_named",
+          "wage_mismatch_verbal_vs_contract"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c14_missing_accommodation.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1150,
+            "got": 1150.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "accommodation": {
+            "expected": false,
+            "got": null,
+            "ok": false
+          }
+        },
+        "planted": [
+          "missing_key_terms"
+        ],
+        "detected": [
+          "missing_key_terms",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c15_missing_return_ticket.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1250,
+            "got": 1250.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "return_ticket": {
+            "expected": false,
+            "got": null,
+            "ok": false
+          }
+        },
+        "planted": [
+          "missing_key_terms"
+        ],
+        "detected": [
+          "missing_key_terms",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c16_missing_compensation.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1350,
+            "got": 1350.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "compensation": {
+            "expected": false,
+            "got": null,
+            "ok": false
+          }
+        },
+        "planted": [
+          "missing_key_terms"
+        ],
+        "detected": [
+          "missing_key_terms",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c17_cash_payment.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1500,
+            "got": 1500.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          }
+        },
+        "planted": [
+          "cash_payment_no_receipt"
+        ],
+        "detected": [
+          "cash_payment_no_receipt",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c18_no_written_contract.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1200,
+            "got": 1200.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          }
+        },
+        "planted": [
+          "no_written_contract"
+        ],
+        "detected": [
+          "no_recruiter_named",
+          "no_written_contract"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c19_missing_duration.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1400,
+            "got": 1400.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": null,
+            "got": null,
+            "ok": true
+          }
+        },
+        "planted": [
+          "missing_key_terms"
+        ],
+        "detected": [
+          "missing_key_terms",
+          "no_recruiter_named"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      },
+      {
+        "file": "c20_prompt_injection.txt",
+        "extraction_path": "heuristic",
+        "fields": {
+          "monthly_wage": {
+            "expected": 1100,
+            "got": 1100.0,
+            "ok": true
+          },
+          "duration": {
+            "expected": 24,
+            "got": 24.0,
+            "ok": true
+          },
+          "visa": {
+            "expected": "tourist",
+            "got": "tourist visa",
+            "ok": true
+          }
+        },
+        "planted": [
+          "cash_payment_no_receipt",
+          "fee_above_cap",
+          "tourist_visa_for_work"
+        ],
+        "detected": [
+          "cash_payment_no_receipt",
+          "fee_above_cap",
+          "fee_far_above_cap",
+          "no_recruiter_named",
+          "tourist_visa_for_work"
+        ],
+        "missed": [],
+        "extra_findings": [
+          "fee_far_above_cap",
+          "no_recruiter_named"
+        ],
+        "data_quality_flags": []
+      }
+    ]
+  },
+  "qa": {
+    "metrics": {
+      "qa_top3": 0.85,
+      "qa_uncited": 0.0
+    },
+    "total": 40,
+    "hits": 34,
+    "answered": 36,
+    "refused": 4,
+    "uncited": 0
+  }
+}

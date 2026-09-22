@@ -1,0 +1,504 @@
+{
+  "note": "Synthetic test set built by eval/make_test_set.py. Planted defects are labelled so recall and false alarms can be measured. Rebuild with the same seed for a reproducible run.",
+  "seed": 20260923,
+  "contracts": [
+    {
+      "file": "c01_clean_en_sa.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1200,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Padma Overseas Employment Ltd.",
+        "agency_rl": "RL-1001"
+      }
+    },
+    {
+      "file": "c02_clean_en_sa.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1400,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Meghna International Recruiting Agency",
+        "agency_rl": "RL-1002"
+      }
+    },
+    {
+      "file": "c03_clean_en_my.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1500,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Jamuna Manpower Services Ltd.",
+        "agency_rl": "RL-1003"
+      }
+    },
+    {
+      "file": "c04_clean_en_my.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1600,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Karnaphuli Overseas Ltd.",
+        "agency_rl": "RL-1004"
+      }
+    },
+    {
+      "file": "c05_clean_bn_sa.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1300,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Sundarban Employment Agency Ltd.",
+        "agency_rl": "RL-1005"
+      }
+    },
+    {
+      "file": "c06_clean_bn_my.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1500,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Teesta Overseas Ltd.",
+        "agency_rl": "RL-1006"
+      }
+    },
+    {
+      "file": "c07_clean_ar_sa.txt",
+      "kind": "clean",
+      "needs_llm": true,
+      "expect": {
+        "monthly_wage": 1200,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Surma Overseas Employment",
+        "agency_rl": "RL-1008"
+      }
+    },
+    {
+      "file": "c08_clean_en_qa.txt",
+      "kind": "clean",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1500,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true,
+        "visa": "work"
+      },
+      "flags": [],
+      "answers": {
+        "agency_name": "Barak Manpower International Ltd.",
+        "agency_rl": "RL-1009"
+      }
+    },
+    {
+      "file": "c09_missing_wage.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": null,
+        "duration": 24,
+        "accommodation": true,
+        "return_ticket": true,
+        "compensation": true
+      },
+      "flags": [
+        "missing_key_terms",
+        "vague_clause"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c10_tourist_visa.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1100,
+        "duration": 24,
+        "visa": "tourist"
+      },
+      "flags": [
+        "tourist_visa_for_work",
+        "fee_above_cap"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c11_fee_above_cap.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1300,
+        "duration": 24
+      },
+      "flags": [
+        "fee_above_cap",
+        "cash_payment_no_receipt"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c12_vague_clause.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1200,
+        "duration": 24
+      },
+      "flags": [
+        "vague_clause"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c13_wage_mismatch.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1200,
+        "duration": 24
+      },
+      "flags": [
+        "wage_mismatch_verbal_vs_contract"
+      ],
+      "answers": {
+        "verbal_wage_bdt": 60000
+      }
+    },
+    {
+      "file": "c14_missing_accommodation.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1150,
+        "duration": 24,
+        "accommodation": false
+      },
+      "flags": [
+        "missing_key_terms"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c15_missing_return_ticket.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1250,
+        "duration": 24,
+        "return_ticket": false
+      },
+      "flags": [
+        "missing_key_terms"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c16_missing_compensation.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1350,
+        "duration": 24,
+        "compensation": false
+      },
+      "flags": [
+        "missing_key_terms"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c17_cash_payment.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1500,
+        "duration": 24
+      },
+      "flags": [
+        "cash_payment_no_receipt"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c18_no_written_contract.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1200,
+        "duration": 24
+      },
+      "flags": [
+        "no_written_contract"
+      ],
+      "answers": {
+        "written_contract": false
+      }
+    },
+    {
+      "file": "c19_missing_duration.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1400,
+        "duration": null
+      },
+      "flags": [
+        "missing_key_terms"
+      ],
+      "answers": {}
+    },
+    {
+      "file": "c20_prompt_injection.txt",
+      "kind": "planted",
+      "needs_llm": false,
+      "expect": {
+        "monthly_wage": 1100,
+        "duration": 24,
+        "visa": "tourist"
+      },
+      "flags": [
+        "tourist_visa_for_work",
+        "fee_above_cap",
+        "cash_payment_no_receipt"
+      ],
+      "answers": {}
+    }
+  ],
+  "licence_queries": [
+    {
+      "q": "RL-1023",
+      "expect_status": "found",
+      "expect_rl": "RL-1023",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1016",
+      "expect_status": "found",
+      "expect_rl": "RL-1016",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1019",
+      "expect_status": "found",
+      "expect_rl": "RL-1019",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1024",
+      "expect_status": "found",
+      "expect_rl": "RL-1024",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1039",
+      "expect_status": "found",
+      "expect_rl": "RL-1039",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1027",
+      "expect_status": "found",
+      "expect_rl": "RL-1027",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1032",
+      "expect_status": "found",
+      "expect_rl": "RL-1032",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1014",
+      "expect_status": "found",
+      "expect_rl": "RL-1014",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1002",
+      "expect_status": "found",
+      "expect_rl": "RL-1002",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-1026",
+      "expect_status": "found",
+      "expect_rl": "RL-1026",
+      "group": "exact_rl"
+    },
+    {
+      "q": "RL-9000",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9001",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9002",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9003",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9004",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9005",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9006",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9007",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9008",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "RL-9009",
+      "expect_status": "not_found",
+      "expect_rl": null,
+      "group": "invalid"
+    },
+    {
+      "q": "Mahananda Overs",
+      "expect_status": "found",
+      "expect_rl": "RL-1023",
+      "group": "typo_name"
+    },
+    {
+      "q": "Turag Overs",
+      "expect_status": "found",
+      "expect_rl": "RL-1016",
+      "group": "typo_name"
+    },
+    {
+      "q": "Padma-Kushiyara Employm",
+      "expect_status": "found",
+      "expect_rl": "RL-1019",
+      "group": "typo_name"
+    },
+    {
+      "q": "Punarbhaba Recruit",
+      "expect_status": "found",
+      "expect_rl": "RL-1024",
+      "group": "typo_name"
+    },
+    {
+      "q": "Arial Kha",
+      "expect_status": "found",
+      "expect_rl": "RL-1039",
+      "group": "typo_name"
+    },
+    {
+      "q": "Matamuhuri Recruit",
+      "expect_status": "found",
+      "expect_rl": "RL-1027",
+      "group": "typo_name"
+    },
+    {
+      "q": "Padma-Meghna Recruitm",
+      "expect_status": "found",
+      "expect_rl": "RL-1032",
+      "group": "typo_name"
+    },
+    {
+      "q": "Atrai Overs",
+      "expect_status": "found",
+      "expect_rl": "RL-1014",
+      "group": "typo_name"
+    },
+    {
+      "q": "Meghna Internatio",
+      "expect_status": "found",
+      "expect_rl": "RL-1002",
+      "group": "typo_name"
+    },
+    {
+      "q": "Sangu Overs",
+      "expect_status": "found",
+      "expect_rl": "RL-1026",
+      "group": "typo_name"
+    }
+  ]
+}

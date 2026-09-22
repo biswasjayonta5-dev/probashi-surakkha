@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-09",
+  "policy_note_bn": "সরকার প্রতি দেশের জন্য অভিবাসন খরচের সর্বোচ্চ সীমা (ceiling of the cost of migration) নির্ধারণ করে — Overseas Employment and Migrants Act 2013, ধারা ২১। সীমা পরিবর্তন হয়, তাই প্রতিটি রেকর্ডে তারিখ রাখা হয়েছে।",
+  "caps": {
+    "SA": {
+      "country_en": "Saudi Arabia",
+      "country_bn": "সৌদি আরব",
+      "cap_bdt": 165000,
+      "effective_date": null,
+      "effective_date_note": "সীমার কার্যকর তারিখ কোনো নির্ভরযোগ্য সূত্রে পাওয়া যায়নি",
+      "verified": false,
+      "source": "প্রকল্প-পরিকল্পনা §২ যা সংবাদ প্রতিবেদন থেকে নেওয়া (S7: The Business Standard, জুলাই ২০২২)",
+      "source_refs": ["S7", "S9"],
+      "note": "[verify] সর্বশেষ BMET/মন্ত্রণালয় সার্কুলার থেকে যাচাই করে effective_date সহ হালনাগাদ করুন। যাচাই না হওয়া পর্যন্ত এই তুলনা সতর্কতার সাথে ব্যবহার করুন।"
+    },
+    "MY": {
+      "country_en": "Malaysia",
+      "country_bn": "মালয়েশিয়া",
+      "cap_bdt": 78990,
+      "effective_date": "2022",
+      "effective_date_note": "২০২২ সালে নির্ধারিত; দিন-তারিখ নিশ্চিত নয়",
+      "verified": false,
+      "source": "প্রকল্প-পরিকল্পনা §২ যা সংবাদ প্রতিবেদন থেকে নেওয়া (S8: New Age, 'Govt-fixed cost in name only')",
+      "source_refs": ["S8"],
+      "note": "[verify] মালয়েশিয়া করিডরে ফি-সীমা বহুবার বদলেছে; লঞ্চের আগে অবশ্যই সর্বশেষ সার্কুলার দেখুন।"
+    }
+  },
+  "unavailable_note_bn": "এই তালিকায় না থাকা দেশের জন্য টুল কোনো তুলনা করে না এবং কোনো সংখ্যা অনুমান করে না। তখন ব্যবহারকারীকে বিএমইটি অফিসে যেতে বলা হয়।",
+  "fx_to_bdt": {
+    "BDT": 1.0,
+    "SAR": 32.0,
+    "MYR": 27.0,
+    "USD": 122.0,
+    "AED": 33.0,
+    "QAR": 33.5,
+    "KWD": 396.0,
+    "OMR": 317.0,
+    "snapshot_date": "2026-09",
+    "note": "[verify] FX snapshot fixed by hand so the prototype never depends on a live rate feed; refresh with each cap review."
+  }
+}
